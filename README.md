@@ -1,22 +1,40 @@
-# CD-T-Four
-# Object Detection and Pick-up and Drop-up using TurtleBot 3 Burger- HOME SERVICE ROBOT
+# Obstacle Detection and Environmental Data Collection using TurtleBot 3 Burger
 
 
 ## Table of Contents
 1. Introduction
 2. Installation
-3. Usage
-4. features
 
 ## 1. Introduction
-The overall goal of this project is to make a home service rebot which can detect and pick-up and drop-off object inside a house hold using TurtleBot 3 burger. This project deals with Robot Operating System (ROS) & OpenCV (Open-source Computer Vision Library).
+The overall goal of this project is to build a system that can detect obstacle using turtleBot 3 burger and which can be implemented in environmental data collection. TurtleBot 3 can be equipped with various environmental sensors to collect data such as temperature, humidity, air quality, or soil conditions. This data, combined with obstacle detection, provides a comprehensive understanding of the environment being monitored. This project deals with Robot Operating System (ROS) & OpenCV (Open-source Computer Vision Library).
 
 OpenCV methods are used for detecting the object and ROS is used for linking perception stage to actuation stage. (The detection script and nodes are implemented in Python)
 
 ### 1.1 Sensors & Add-ins Used
 1. camera- It can be used for visual recognition and identification of objects, enabling the robot to locate items to pick up or drop off accurately.
 2. LiDar-  LIDAR sensors, such as the one commonly used in the TurtleBot 3 Burger, provide a 360-degree view of the robot's surroundings by emitting laser beams and measuring the time it takes for the beams to bounce back. LIDAR is useful for mapping the environment, detecting obstacles, and identifying objects for pick-up and drop-off tasks.
-3. Gripper Arm- A gripper or manipulator arm attached to the TurtleBot 3 Burger enables the physical interaction with objects. The gripper can be designed to grasp and release items based on their size, weight, and shape, facilitating the pick-up and drop-off tasks.
+3. Temperature & Humidity sensor- A sensor like the DHT11 or DHT22 can be used to measure temperature and humidity levels in the environment.
+
+Step 1: Connect the air quality sensor to the appropriate GPIO pins or interfaces of the TurtleBot 3.
+
+Step 2: Develop code to read sensor data, convert raw values to meaningful units, and log or transmit the data.
+
+4. Soil Moisture Sensor: Sensors like the capacitance-based or resistive soil moisture sensors can be used to measure soil moisture content.
+
+Step 1: Connect the soil moisture sensor to the TurtleBot 3, ensuring proper electrical connections.
+
+Step 2: Develop code to read sensor values and convert them to meaningful moisture levels.
+
+Step 3: Implement a suitable data logging or transmission mechanism to record or transmit the collected soil moisture data.
+
+5. Light Sensor: Light sensors, such as LDRs (Light-Dependent Resistors) or photodiodes, can be used to measure light levels or monitor day-night cycles.
+
+Step 1: Connect the light sensor to the TurtleBot 3's input pins or appropriate interfaces.
+
+Step 2: Develop code to read sensor values and convert them to meaningful light intensity or lux levels.
+
+Step 3: Implement a data logging or transmission mechanism to record or transmit the collected light data.
+
 # PC Setup using:
 - Ubuntu 20.04
 - ROS Neotic
