@@ -3,7 +3,8 @@
 
 ## Table of Contents
 1. Introduction
-2. Installation
+2. Challenges
+3. Installation
 
 ## 1. Introduction
 The overall goal of this project is to build a system that can detect obstacle using turtleBot 3 burger and which can be implemented in environmental data collection. TurtleBot 3 can be equipped with various environmental sensors to collect data such as temperature, humidity, air quality, or soil conditions. This data, combined with obstacle detection, provides a comprehensive understanding of the environment being monitored. This project deals with Robot Operating System (ROS) & OpenCV (Open-source Computer Vision Library).
@@ -34,6 +35,15 @@ Step 1: Connect the light sensor to the TurtleBot 3's input pins or appropriate 
 Step 2: Develop code to read sensor values and convert them to meaningful light intensity or lux levels.
 
 Step 3: Implement a data logging or transmission mechanism to record or transmit the collected light data.
+
+## Challenges:
+1. Navigation in Unstructured Environments: Implement robust navigation algorithms and obstacle avoidance strategies to enable safe movement in farming fields with uneven terrain and obstacles.
+
+2. LIDAR Data Processing: Develop efficient algorithms for real-time processing of LiDAR data to extract meaningful information like object detection and segmentation.
+
+3. Map Accuracy and Localization: Address the challenges of maintaining accurate mapping and localization in dynamic farming environments by adapting mapping algorithms to changes and incorporating robust localization techniques.
+4. Integration of Sensors: Ensure accurate and reliable integration of data from multiple sensors, including LiDAR and environmental sensors, through proper calibration, data fusion techniques, and synchronization mechanisms.
+5. Robustness to Environmental Conditions: Design the TurtleBot3, its sensors, and algorithms to withstand challenging farming conditions like dust, debris, moisture, and extreme temperatures for reliable and continuous operation.
 
 # PC Setup using:
 - Ubuntu 20.04
